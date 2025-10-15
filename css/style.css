@@ -1,0 +1,78 @@
+body { margin: 0; padding: 0; background-image: url(TwitchiFamily.png); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed; }
+
+h1 {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight:bold; -webkit-text-stroke-width: 0.1px; -webkit-text-stroke-color: rgba(0, 223, 48, 0.733); -webkit-text-fill-color: rgb(0, 81, 255);
+; font-size: 36px; display: flex; margin: auto; text-align: center; justify-content: center; text-shadow: 0px 0px 15px rgb(2, 6, 255);}
+h2 {font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bolder; font-size: 22px; color: rgb(0, 185, 231); display: flex; margin: auto; text-align: center; justify-content: center;}
+h3 {font-family: Georgia, 'Times New Roman', Times, serif; font-size: 36px; color: rgb(177, 87, 2); display: flex; margin: auto; text-align: center; justify-content: center; ;max-width: 400px;
+    font-weight: bolder; text-transform: none; background-color: rgb(0, 132, 255); color: rgb(255, 174, 0); border-radius: 8px; background: linear-gradient(270deg, #004e92, #008a55, #880000, #1b7080); 
+    background-size: 800% 800%; animation: gradientMove 4s ease infinite;}
+@keyframes gradientMove { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; }}
+
+
+
+p {display: flex; margin: auto; text-align: center; justify-content: center; color: rgb(178, 255, 238); font-size: 20px; font-weight: bolder; text-shadow: 2px 2px 8px rgb(179, 255, 0);}
+p1 {display: flex; margin: auto; text-align: center; justify-content: center; -webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: rgba(22, 0, 223, 0.733); -webkit-text-fill-color: rgb(0, 212, 64);
+     font-size: 20px; font-weight: bolder; text-shadow: 2px 2px 8px rgb(0, 153, 46);}
+text {display: flex; margin: auto; text-align: center; justify-content: center; color: rgb(204, 204, 204); font-size: 20px; font-weight:100; text-shadow: 2px 2px 8px rgb(0, 26, 255);}
+
+section { justify-content: center; display:flex ; flex-direction: column ; margin: 20px auto; padding: center; align-items: center;  max-width: 700px;
+    background: linear-gradient(270deg, #00297596, #5e007596,#00750096,#00297596); background-size: 800% 800%; animation: gradientMove 600s ease infinite;} 
+@keyframes gradientMove { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; }} 
+
+section form.buch {padding: 20px; margin: auto; flex-direction: column; display: flex; align-items: center; }
+section form.buch input { padding: 5px 8px; border-radius: 6px; border: none; outline: none;}
+section form.buch textarea { width: 450px; height: 250px ; border-radius: 6px; resize: vertical; overflow-y: hidden; white-space: pre-wrap;  word-wrap: break-word;}
+section form.buch button { padding: 5px 80px; border-radius: 4px; border: 0px; cursor: pointer; background: rgb(116,197,130); color: rgba(255, 255, 255, 0.705);}
+
+section1 ul { justify-content: center; display: flex;  list-style: none; margin: 10px auto; max-width: 300px;
+    background: linear-gradient(270deg, #00297596, #5e007596,#00750096,#00297596); background-size: 800% 800%; animation: gradientMove 60s ease infinite;}
+@keyframes gradientMove { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; }}
+section1 ul li {margin: 1px auto; }
+section1 ul li a { font-size: 20px; color: rgb(255, 230, 120); text-decoration: none; white-space: nowrap; font-weight: bold; text-shadow: 2px 2px 6px rgb(0, 203, 253); padding: 8px 16px; 
+    border-radius: 8px; transition: all 0.3s ease; background: rgba(0, 0, 0, 0.3); }
+section1 ul li a:hover { color: #fff; background: linear-gradient(90deg, #00883d, #004e92); box-shadow: 0 0 12px #00b3ff; transform: scale(1.05);}
+
+ul.index { list-style: none; padding: 0; margin-top: 15px; text-align: center;}
+ul.index li { position: relative; margin: 15px 0;}
+ul.index a { font-size: 20px; color: rgb(255, 230, 120); text-decoration: none; font-weight: bold; text-shadow: 2px 2px 6px rgb(0, 203, 253); padding: 8px 16px; border-radius: 8px; transition: all 0.3s ease; background: rgba(0, 0, 0, 0.3); }
+ul.index a:hover { color: #fff; background: linear-gradient(90deg, #00883d, #004e92); box-shadow: 0 0 12px #00b3ff; transform: scale(1.05);}
+
+ul.treiber { list-style: none; padding: 0; margin-top: 15px; text-align: center;}
+ul.treiber li { margin: 15px 0;}
+ul.treiber a { font-size: 20px; color: rgb(255, 230, 120); text-decoration: none; font-weight: bold; text-shadow: 2px 2px 6px rgb(0, 203, 253); padding: 8px 16px; border-radius: 8px; transition: all 0.3s ease; background: rgba(0, 0, 0, 0.3); }
+ul.treiber a:hover { color: #fff; background: linear-gradient(90deg, #00883d, #004e92); box-shadow: 0 0 12px #00b3ff; transform: scale(1.05);}
+
+
+nav ul { justify-content: center; display: flex; flex-wrap: wrap; list-style: none; margin: 0; padding: 20px; background: linear-gradient(270deg, #00297596, #5e007596,#00750096,#00297596); 
+    background-size: 800% 800%; animation: gradientMove 60s ease infinite;}
+@keyframes gradientMove { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; }}
+nav ul li {position: relative; margin: 10px; }
+nav ul li a { font-size: 20px; color: rgb(255, 230, 120); text-decoration: none; white-space: nowrap; font-weight: bold; text-shadow: 2px 2px 6px rgb(0, 203, 253); padding: 8px 16px; 
+    border-radius: 8px; transition: all 0.3s ease; background: rgba(0, 0, 0, 0.3); }
+nav ul li a:hover { color: #fff; background: linear-gradient(90deg, #00883d, #004e92); box-shadow: 0 0 12px #00b3ff; transform: scale(1.05);}
+
+nav ul li a.active { font-weight: bolder; text-transform: none; background-color: rgb(0, 132, 255); font-size: 22px; color: rgb(255, 174, 0); border-radius: 8px;
+    background: linear-gradient(270deg, #004e92, #008a55, #880000, #1b7080); background-size: 800% 800%; animation: gradientMove 4s ease infinite;}
+@keyframes gradientMove { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; }}
+
+nav ul li ul.dropdown-content { display: none; position: absolute; top: 100%;  left: 0; background: #004e92; list-style: none; padding: 10px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);}
+nav ul li:hover ul.dropdown-content { display: block;}
+nav ul li ul.dropdown-content li a { display: block; padding: 8px 20px; color: #fff; text-decoration: none; white-space: nowrap;}
+nav ul li ul.dropdown-content li a:hover { background: #008a55;}
+
+nav ul li.suche {margin-left: auto; display: flex; align-items: center;}
+nav ul li.suche input { padding: 5px 8px; border-radius: 4px; border: none; outline: none; }
+nav ul li.suche button { margin-left: 7px; padding: 5px 8px; border-radius: 4px; border: none; cursor: pointer; background: rgb(116,197,130); color: rgba(255, 255, 255, 0.705); }
+
+
+.button-container { display: flex;   gap: 25px;  flex-wrap: wrap;  justify-content: center;  margin-top: 20px;}
+.button-item {  text-align: center;  width: 160px;}
+.button-img { width: 100%;  border-radius: 8px;  cursor: pointer;  transition: transform 0.2s, box-shadow 0.2s;}
+.button-img:hover {  transform: scale(1.05);  box-shadow: 10px 10px 10px rgb(0, 43, 184);}
+
+figcaption {  margin-top: 10px;  font-size: 15px;  color: rgb(116, 197, 130);  font-weight: bold; text-shadow: 2px 2px 8px rgb(0, 26, 255);}
+
+figcaption.active {  text-transform: none; border-radius: 8px; margin-top: 8px;  font-size: 24px;  text-shadow: 1px 1px 8px rgb(145, 255, 0);  color: rgb(119, 0, 231); font-weight: bold; 
+    background: linear-gradient(270deg, #004e92, #008a55, #880000, #1b7080); background-size: 800% 800%; animation: gradientMove 4s ease infinite;}
+@keyframes gradientMove { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%;}}
+

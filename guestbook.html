@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Die Twitchis</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="index.html">Startseite</a></li>
+    <li class="dropdown">
+      <a href="streaming.html">Streaming &#x25BC;</a>
+      <ul class="dropdown-content">
+        <li><a href="wir_streamer.html">Wir als Streamer</a></li>
+        <li><a href="music.html">Musikwünsche</a></li>
+        <li><a href="spiele.html">Spielewahl</a></li>
+      </ul>
+    <li>
+
+    <li><a href="pc_help.html">PC Hilfe</a></li>
+    <li><a href="memories.html">Erinnerungen</a></li>
+    <li><a href="guestbook.html" class="active">Gästebuch</a></li>
+  
+  <li class="suche">
+      <input type="text" placeholder="Suche..." id="searchInput">
+      <button onclick="searchSite()">🔍</button></li>
+
+  </ul>
+</nav>
+
+<section>
+  <h1>Das "Twitchi-Gästebuch"</h1>
+  <p>Hier könnt Ihr gern Anregungen, Lob und auch Kritik hinterlassen. </p>
+
+<form class="buch">
+
+  <input type="text" id="name" placeholder="Dein Name / Twitchname" maxlength="30" border="none" required><br>
+  <textarea id="message" placeholder="Deine Nachricht..." required></textarea><br>
+ 
+
+  <button type="submit">Absenden</button>
+</form>
+ 
+</section>
+ <h3> DANKE SCHÖN</h3>
+
+
+<p id="feedback"></p>
+
+<hr>
+
+<div id="entries"></div>
+
+<script>
+async function loadEntries() {
+  const res = await fetch("/api/guestbook");
+  const data = await res.json();
+  const container = document.getElementById("entries");
+  container.innerHTML = data.map(e =>
+    `<div><b>${e.name}</b>: ${e.message} <br><small>${e.created_at}</small></div><hr>`
+  ).join("");
+}
+
+document.getElementById("guestForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  const name = document.getElementById("name").value;
+  const message = document.getElementById("message").value;
+  
+  const res = await fetch("/api/guestbook", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, message })
+  });
+  const data = await res.json();
+  document.getElementById("feedback").textContent = data.message || data.error;
+});
+
+loadEntries();
+</script>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
