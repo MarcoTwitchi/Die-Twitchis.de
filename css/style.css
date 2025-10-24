@@ -1,9 +1,6 @@
-<<<<<<< HEAD
+HEAD
 
 body { margin: 0; padding: 0; background-image: url(TwitchiFamily.png); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed; background-color: rgb(0, 0, 0); }
-=======
-body { margin: 0; padding: 0; background-image: url(TwitchiFamily.png); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed; background-color: rgba(0, 0, 0,); }
->>>>>>> 74ae4827136245262da7d3559f2485615cc8eb02
 
 h1 {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight:bold; -webkit-text-stroke-width: 0.1px; -webkit-text-stroke-color: rgba(0, 223, 48, 0.733); -webkit-text-fill-color: rgb(0, 81, 255);
 ; font-size: 36px; display: flex; margin: auto; text-align: center; justify-content: center; text-shadow: 0px 0px 15px rgb(2, 6, 255);}
