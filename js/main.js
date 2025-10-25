@@ -1,8 +1,8 @@
 window.addEventListener("scroll", () => {
-  const header = document.getElementById("header");
+  const head = document.getElementById("header");
   if (window.scrollY > 50) {
-    header.classList.add("shrink");
+    head.classList.add("shrink");
   } else {
-    header.classList.remove("shrink");
+    head.classList.remove("shrink");
   }
 });
